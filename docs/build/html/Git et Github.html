@@ -1,0 +1,180 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="FR">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Git et Github &#8212; Documentation Environnement 1.0</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Recherche" href="search.html" />
+    <link rel="next" title="Git partage" href="Git partage.html" />
+    <link rel="prev" title="Environnement Linux Ubuntu" href="Environnement Linux Ubuntu.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="git-et-github">
+<h1>Git et Github<a class="headerlink" href="#git-et-github" title="Lien permanent vers ce titre">¶</a></h1>
+<p>I QU’EST CE QUE GIT&nbsp;?</p>
+<p>Git ===&gt;	- VCS (Version Control System),
+- Pour gérer tous nos projets,
+- Pour tracker les différents changements apportés à un projet spécifique.</p>
+<p>===&gt; C’est un outil qui apporte de gérer nos projets.
+===&gt; GitHub = C’est une plateforme qui permet d’héberger nos différents projets.</p>
+<p>Pourquoi&nbsp;?
+- collaboration,
+- historique des différentes versions,
+- développement en parallèle.</p>
+<p>Comment&nbsp;?
+- Création d’un compte sur GitHub
+(https://git-scm.com/book/fr/v2/GitHub-Configuration-et-param%C3%A9trage-d%E2%80%99un-compte),
+- Installation de Git en local (https://desktop.github.com/)
+- Environnement de travail
+Avec un projet (avec un dossier et des fichiers), un éditeur de texte et un terminal</p>
+<p><img alt="version" src="_images/version.jpg" /></p>
+<p>II PREMIERS PAS SUR GIT</p>
+<p>Initialisation du projet&nbsp;:</p>
+<p>Avec Git init, git va créer un fichier caché «&nbsp;git&nbsp;» dans le dossier (en fichier caché) [CTRL H pour afficher les fichiers cachés sur Linux ]qui permettra de pusher les fichiers vers Github.</p>
+<p><img alt="initialisation" src="_images/initialisation.jpg" /></p>
+<p>Identification sur Git&nbsp;:</p>
+<p>Il faut ensuite s’identifier sur Git pour pouvoir continuer à utiliser toutes les commandes.</p>
+<p><img alt="identification" src="_images/identification.jpg" /></p>
+<p>Exemple de sauvegarde d’un fichier sur GitHub&nbsp;:</p>
+<p>Dans un premier temps, il faut pré-sauvegarder le fichier grâce à «&nbsp;git add NomDuFichier&nbsp;» puis avec la commande «&nbsp;guide status&nbsp;», on affichera la liste de tous les fichiers pré-sauvegardés.</p>
+<p><img alt="add" src="_images/add.jpg" /></p>
+<p>Pour annuler cette opération,il faut comme c’est indiqué au-dessus, utiliser la commande
+«&nbsp;git rm –cached NomDuFichier&nbsp;».</p>
+<p>Attention de ne pas oublier les deux tirets avant «&nbsp;cached&nbsp;» sans cela, le fichier sera supprimé.</p>
+<p><img alt="annulation" src="_images/annulation.jpg" /></p>
+<p>Pour annuler une suppression ou tout autre changement, la commande «&nbsp;checkout&nbsp;» peut être utilisée.</p>
+<p><img alt="checkout" src="_images/checkout.jpg" /></p>
+<p>A la fin, pour finaliser la pré-sauvegarde, il suffit d’utiliser la commande «&nbsp;commit&nbsp;»
+Une page vim s’ouvre et demande un message de validation, ici «&nbsp;Première sauvegarde&nbsp;».
+Vim&nbsp;est un éditeur de texte, c”est-à-dire un logiciel permettant la manipulation de fichiers texte.
+Un CTRL X ferme vim.</p>
+<p><img alt="vim" src="_images/vim.jpg" /></p>
+<p>Enfin, avec la commande «&nbsp;commit -m «&nbsp;mise à jour&nbsp;», les fichiers sont enregistrés.</p>
+<p>La commande «&nbsp;gitignore&nbsp;»&nbsp;:</p>
+<p>https://perhonen.fr/blog/2015/03/exclure-fichiers-depot-git-gitignore-1476</p>
+<p>En fait, ce n’est pas une commande mais un fichier&nbsp;en faisant :
+⇒ touch .gitignore</p>
+<p>Il suffira d’y inscrire les noms des fichiers que nous voulons exclure des git car trop sensibles par exemple.
+EX&nbsp;: .test/ (Ne pas oublier le point au début et le slash à la fin)</p>
+<p><img alt="gitignore1" src="_images/gitignore1.jpg" /></p>
+<p>En faisant ls, le fichier .gitignore n’apparaît pas.</p>
+<p><img alt="gitignore2" src="_images/gitignore2.jpg" /></p>
+<p>III LES BRANCHES</p>
+<p>https://git-scm.com/book/fr/v2/Les-branches-avec-Git-Les-branches-en-bref
+En faisant «&nbsp;git status&nbsp;», nous pouvons vérifier que nous sommes bien sur la branche master.</p>
+<p><img alt="status" src="_images/status.jpg" /></p>
+<p>Création d’une nouvelle branche&nbsp;:</p>
+<p><img alt="branch1" src="_images/branch1.jpg" /></p>
+<p>Pour aller sur cette nouvelle branche, il suffit de faire «&nbsp;git checkout NomNouvelleBranche&nbsp;».</p>
+<p><img alt="branch2" src="_images/branch2.jpg" /></p>
+<p>Pour savoir dans quelle branche, nous sommes, il faut utiliser la commande «&nbsp;git branch –list&nbsp;».
+Ne pas mettre d’espace entre les deux tirets et le nom de la branche, sinon une nouvelle branche sera créée.
+L’étoile devant le nom de la branche indiquera dans quelle branche nous nous situons.</p>
+<p><img alt="branchlist" src="_images/branchlist.jpg" /></p>
+<p><img alt="merge" src="_images/merge.jpg" /></p>
+<p>IV REPOSITORY SUR GITHUB</p>
+<p><img alt="repository1" src="_images/repository1.jpg" /></p>
+<p><img alt="repository2" src="_images/repository2.jpg" /></p>
+<p><img alt="repository3" src="_images/repository3.jpg" /></p>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Environnement</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Environnement Linux Ubuntu.html">Environnement Linux Ubuntu</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Git et Github</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Git partage.html">Git partage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Anaconda.html">INSTALLATION EN LIGNE DE COMMANDE DE ANACONDA</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="Environnement Linux Ubuntu.html" title="Chapitre précédent">Environnement Linux Ubuntu</a></li>
+      <li>Next: <a href="Git partage.html" title="Chapitre suivant">Git partage</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Recherche rapide</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Ines DRIDI Amaria BOUALAM Djoumbe ALI SADONI.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/Git et Github.md.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
