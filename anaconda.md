@@ -118,6 +118,7 @@ N'installez pas en tant qu'administrateur sauf si les privilèges d'administrate
 
 
     ![complete](./image_git/complete.jpg)
+    
 
 13. Si vous souhaitez en savoir plus sur Anaconda Cloud et comment démarrer avec Anaconda, cochez les cases «En savoir plus sur Anaconda Cloud» et «Apprenez à démarrer avec Anaconda». Cliquez sur le bouton Terminer.
 
