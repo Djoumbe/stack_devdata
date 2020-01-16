@@ -1,0 +1,189 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="FR">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>ENVIRONNEMENT LINUX UBUNTU &#8212; Documentation Environnement 1.0</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Recherche" href="search.html" />
+    <link rel="next" title="GIT ET GITHUB" href="GIT ET GITHUB.html" />
+    <link rel="prev" title="DOCUMENTATION ENVIRONNEMENT" href="index.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="environnement-linux-ubuntu">
+<h1>ENVIRONNEMENT LINUX UBUNTU<a class="headerlink" href="#environnement-linux-ubuntu" title="Lien permanent vers ce titre">¶</a></h1>
+<p>Veille Environnement Linux/Ubuntu</p>
+<ol class="simple">
+<li>Présentation de Linux et de Ubuntu
+Linux est un système d’exploitation basé sur un noyau qui permet d’utiliser un environnement gratuit et libre de droit qui a crée par Linus Tovarlds en 1991.</li>
+</ol>
+<p>Ubuntu est est une distribution qui est basé sur le noyau de Linux open-source qui permet de naviguer sur Internet, utiliser des applications et gérer une bibliothèque multimédia.</p>
+<p>C’est un noyau utilisé par beaucoup de systèmes d’exploitation très connus&nbsp;: entre autre, Android et MacOSx, l’un a été crée par Google et l’autre par Apple et se base sur ce noyau commun.</p>
+<p>Ubuntu est la distribution Linux la plus connue car c’est l’un des système qui possède le plus d’améliorations, de fonctionnalités, de stabilité basé sur l’entraide de la communauté.</p>
+<p>Il est l’un des systèmes d’exploitations les plus utilisés au monde avec des millions d’utilisateurs, que ce soit sur utilisation classique en bureautique qu’avec des serveurs informatiques et sur le cloud.</p>
+<ol class="simple">
+<li>Installation d’Ubuntu sur un PC</li>
+</ol>
+<p>Il y a plusieurs façons d’installer Linux sur un ordinateur.</p>
+<p>Tout d’abord : Deux médias peuvent être utilisés, sois un lecteur CD ou une clé USB.
+Il faut télécharger le fichier ISO (l’image disque) su son PC et l’importer sur un média à l’aide d’un logiciel qui permettra de rendre son CD ou sa clé bootable.</p>
+<p>Avec le BIOS en lançant le logiciel d’installation par cela. L’installation s’effectue en quelques minutes selon la vitesse en écriture et en lecture de son espace de stockage (SSD ou disque dur classique ) et nous atterrissons sur l’environnement Ubuntu.</p>
+<p>Ensuite&nbsp;: nous pouvons lancer une machine virtuel depuis un OS qui peut le permettre (par exemple Windows) pour lancer Ubuntu.
+La virtualisation permet de lancer un ou plusieurs système d’exploitation en utilisant les ressources matérielles d’un ordinateur pour simuler un «&nbsp;faux ordinateur&nbsp;»&nbsp;.</p>
+<p>Pour cette option, il est recommandé d’avoir une bonne configuration pour faire tourner la machine dans de bonnes conditions.</p>
+<p>Pour l’utiliser, il faudra également télécharger l’ISO pour exploiter et Ubuntu et installer Virutal Box, le logiciel qui permettra de lancer la machine virtuelle.
+Lors de l’exécution de l’application, une partie de la mémoire vive de l’ordinateur est utilisée.pour assurer son bon fonctionnement. Cela peut être modifier.
+Plus il y a de RAM, plus le virtualisation sera fluide et sans latence.</p>
+<ol class="simple">
+<li>Présentation du terminal Ubuntu</li>
+</ol>
+<p>Le terminal Linux est un programme qui émule une console à partir d’une interface graphique.
+Savoir utiliser le terminal est très pratique car utiliser des raccourcis au clavier peut être beaucoup plus rapide que des faire des clics en naviguant avec des onglets.
+Pour ouvrir le terminal, il faut utiliser la commande «&nbsp;Ctrl» «&nbsp;Alt&nbsp;» «&nbsp;T&nbsp;».
+Plusieurs éléments visuels peuvent apparaître.
+Le nom du user est «&nbsp;utilisateur&nbsp;» et le nom du pc est «&nbsp;utilisateur-ThinkPad-T430&nbsp;».
+• ~&nbsp;: c”est le dossier dans lequel on se trouve actuellement. Vous pouvez naviguer de dossier en dossier dans la console et il est très utile qu”on vous rappelle systématiquement où vous vous trouvez avant chaque commande. Pour information, le symbole&nbsp;~&nbsp;signifie que vous êtes dans votre dossier personnel, ce qu”on appelle le « home » sous Linux ; c”est l”équivalent du dossier « Mes documents » de Windows.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>• $ : ce dernier symbole est très important ; il indique votre niveau d&#39;autorisation sur la machine. Il peut prendre deux formes différentes :
+• $ : signifie que vous êtes en train d&#39;utiliser un compte utilisateur « normal », avec des droits limités (il ne peut pas modifier les fichiers système les plus importants). Mon compte « utilisateur » est donc un compte normal avec des droits limités ;
+</pre></div>
+</div>
+<p>#&nbsp;: signifie que vous êtes en mode super-utilisateur, c”est-à-dire que vous êtes connectés sous le pseudonyme « root ».</p>
+<ol class="simple">
+<li>Le système de fichiers</li>
+</ol>
+<p>Le système de fichiers est similaire à celui de Windows.
+La racine
+Dans un système de fichiers, il y a toujours ce qu”on appelle une racine, c”est-à-dire un «&nbsp;gros dossier de base qui contient tous les autres dossiers et fichiers&nbsp;».
+Sous Windows, il y a en fait plusieurs racines.C:\est la racine de votre disque dur,D:\est la racine de votre lecteur CD (par exemple).
+Sous Linux,&nbsp;il n”y a qu”une et une seule racine&nbsp;: «&nbsp;/&nbsp;». Comme vous le voyez, il n”y a pas de lettre de lecteur car justement, Linux ne donne pas de nom aux lecteurs comme le fait Windows. Il dit juste «&nbsp;La base, c”est/&nbsp;».</p>
+<p>Architecture des dossiers
+• Sous Windows, un dossier peut être représenté de la manière suivante&nbsp;:C:\Program&nbsp;Files\Winzip. On dit queWinzipest un sous-dossier du dossierProgram&nbsp;Files, lui-même situé à la racine.
+Vous noterez que c”est l”antislash(aussi appelé&nbsp;backslash) qui sert de séparateur aux noms de dossiers.
+• Sous Linux, c”est au contraire le/qui sert de séparateur.
+Comme je vous l”ai dit, il n”y a pas deC:sous Linux, la racine (le début) s”appelant juste/.
+Le dossier de notre super-programme ressemblerait plutôt à quelque chose comme cela&nbsp;:/usr/bin/. On dit quebinest un sous-dossier du dossierusr, lui-même situé à la racine.</p>
+<p>Informations par rapport aux commandes effectués&nbsp;:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>• bin : contient des programmes (exécutables) susceptibles d&#39;être utilisés par tous les utilisateurs de la machine. 
+  
+• boot : fichiers permettant le démarrage de Linux.
+
+• dev : fichiers contenant les périphériques. En fait – on en reparlera plus tard – ce dossier contient des sous-dossiers qui « représentent » chacun un périphérique. On y retrouve ainsi par exemple le fichier qui représente le lecteur CD.
+• etc : fichiers de configuration.
+  
+• home : répertoires personnels des utilisateurs. On en a déjà parlé un peu avant : c&#39;est dans ce dossier que vous placerez vos fichiers personnels, à la manière du dossierMes documentsde Windows. Chaque utilisateur de l&#39;ordinateur possède son dossier personnel.
+
+•  lib : dossier contenant les bibliothèques partagées (généralement des fichiers.so) utilisées par les programmes. C&#39;est en fait là qu&#39;on trouve l&#39;équivalent des.dllde Windows.
+• media : lorsqu&#39;un périphérique amovible (comme une carte mémoire SD ou une clé USB) est inséré dans votre ordinateur, Linux vous permet d&#39;y accéder à partir d&#39;un sous-dossier demedia. On parle de montage.
+
+• mnt : c&#39;est un peu pareil quemedia, mais pour un usage plus temporaire.
+• opt : répertoire utilisé pour les add-ons de programmes.
+• proc : contient des informations système.
+• root : c&#39;est le dossier personnel de l&#39;utilisateur « root ». Normalement, les dossiers personnels sont placés danshome, mais celui de « root » fait exception. En effet, comme je vous l&#39;ai dit dans le chapitre précédent, « root » est le superutilisateur, le « chef » de la machine en quelque sorte. Il a droit à un espace spécial.
+• sbin : contient des programmes système importants.
+• tmp : dossier temporaire utilisé par les programmes pour stocker des fichiers.
+• usr : c&#39;est un des plus gros dossiers, dans lequel vont s&#39;installer la plupart des programmes demandés par l&#39;utilisateur.
+  . var : ce dossier contient des données « variables », souvent des logs (traces écrites de ce qui s&#39;est passé récemment sur l&#39;ordinateur).
+</pre></div>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Environnement</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">ENVIRONNEMENT LINUX UBUNTU</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GIT ET GITHUB.html">GIT ET GITHUB</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GIT PARTAGE.html">GIT PARTAGE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GIT TAG.html">LIGNE DE COMMANDE GIT TAG</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ANACONDA.html">INSTALLATION EN LIGNE DE COMMANDE DE ANACONDA</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="index.html" title="Chapitre précédent">DOCUMENTATION ENVIRONNEMENT</a></li>
+      <li>Next: <a href="GIT ET GITHUB.html" title="Chapitre suivant">GIT ET GITHUB</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Recherche rapide</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Ines DRIDI Amaria BOUALAM Djoumbe ALI SADONI.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/ENVIRONNEMENT LINUX UBUNTU.md.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
