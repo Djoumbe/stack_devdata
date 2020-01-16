@@ -100,13 +100,13 @@ Remarque
 
 N'installez pas en tant qu'administrateur sauf si les privilèges d'administrateur sont requis.
 
-..  image:: ../../win-install-destination.png
-    :width: 500
+
+![win-install-destination](./image_git/win-install-destination.png)    
 
 8. Choisissez d'ajouter Anaconda à votre variable d'environnement PATH. Nous vous recommandons de ne pas ajouter Anaconda à la variable d'environnement PATH, car cela peut interférer avec d'autres logiciels. À la place, utilisez le logiciel Anaconda en ouvrant Anaconda Navigator ou l'invite Anaconda dans le menu Démarrer.
 
-..  image:: ../../win-install-options.png
-    :width: 500
+
+![win-install-options](./image_git/win-install-options.png)
 
 9. Choisissez d'enregistrer Anaconda comme Python par défaut. Sauf si vous prévoyez d'installer et d'exécuter plusieurs versions d'Anaconda ou plusieurs versions de Python, acceptez la valeur par défaut et laissez cette case cochée.
 
@@ -116,8 +116,8 @@ N'installez pas en tant qu'administrateur sauf si les privilèges d'administrate
 
 12. Après une installation réussie, vous verrez la boîte de dialogue «Merci d'avoir installé Anaconda»:
 
-..  image:: ../../win-install-complete.png
-    :width: 500
+
+    ![win-install-complete](./image_git/win-install-complete.png)
 
 13. Si vous souhaitez en savoir plus sur Anaconda Cloud et comment démarrer avec Anaconda, cochez les cases «En savoir plus sur Anaconda Cloud» et «Apprenez à démarrer avec Anaconda». Cliquez sur le bouton Terminer.
 
